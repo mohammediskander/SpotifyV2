@@ -70,7 +70,7 @@ enum AlbumRouter: Router {
     }
     
     func asURLRequest() throws -> URLRequest {
-        var urlRequest = URLRequest(url: AlbumRouter.baseURL!)
+        var urlRequest = URLRequest(url: AlbumRouter.baseURL!.appendingPathComponent(path))
         
         urlRequest.httpMethod = method.rawValue
         
@@ -79,8 +79,7 @@ enum AlbumRouter: Router {
         
         if accessType == .some(.privateRoute) {
             
-            // extract token (aka: oauthToken) from KeyChain
-            let token = ""
+            let token = KeyChain.load(key: "spotify.user.oauthToken")?.to(type: String.self)
             urlRequest.allHTTPHeaderFields?["Authorization"] = token
         }
         
