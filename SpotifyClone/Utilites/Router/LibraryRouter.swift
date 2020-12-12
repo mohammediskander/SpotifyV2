@@ -191,7 +191,8 @@ enum LibraryRouter: Router {
         
         if accessType == .some(.privateRoute) {
             
-            /let token = KeyChain.load(key: "spotify.user.oauthToken")?.to(type: String.self)
+            let token = KeyChain.load(key: "spotify.user.oauthToken")?.to(type: String.self)
+            
             urlRequest.allHTTPHeaderFields?["Authorization"] = token
         }
         
