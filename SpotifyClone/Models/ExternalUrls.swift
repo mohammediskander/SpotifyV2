@@ -23,7 +23,7 @@ struct ExternalUrls: Codable {
 
 extension ExternalUrls {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(ExternalUrls.self, from: data)
+        self = try JSON.decoder().decode(ExternalUrls.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -46,7 +46,7 @@ extension ExternalUrls {
     }
 
     func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
+        return try JSON.encoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
