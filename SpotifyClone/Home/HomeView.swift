@@ -12,7 +12,7 @@ class HomeView: UIView {
     var headerTitle: UITextField!
     var firstCollectionView: UIView!
     
-    
+    let searchTextfield = customTextFieldWithIcon()
     
     func setupView() {
         self.backgroundColor = .systemBackground

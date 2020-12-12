@@ -43,7 +43,7 @@ class AlbumArtistCollectionViewController: UIViewController {
         
         setupView()
     }
-    
+    #warning("Delete this warining, you are here")
     func setupView() {
         albumArtistView = AlbumArtistView(frame: self.view.bounds)
         albumArtistView.collectionView = self.collectionView

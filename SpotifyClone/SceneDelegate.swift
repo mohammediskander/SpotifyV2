@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window = UIWindow(windowScene: windowScene)
             window?.windowScene = windowScene
 //            window.rootViewController = UINavigationController(rootViewController: HomeController()) // Your RootViewController in here
-            window?.rootViewController = HomeController() // Your RootViewController in here
+            window?.rootViewController = SearchController() // Your RootViewController in here
 
 //            self.window = window
             window?.makeKeyAndVisible()
