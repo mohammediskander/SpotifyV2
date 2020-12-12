@@ -8,7 +8,6 @@
 import UIKit
 
 class HomeView: UIView {
-    #warning("change to text class")
     var collectionView: UIView!
     
     
