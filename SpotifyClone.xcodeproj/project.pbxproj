@@ -80,6 +80,8 @@
 		2CDA8A8525824D610005613C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A8425824D610005613C /* Button.swift */; };
 		2CDA8A8F25824DB10005613C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A8E25824DB10005613C /* Router.swift */; };
 		2CDA8A9625824E2F0005613C /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A9525824E2F0005613C /* AlbumRouter.swift */; };
+		DD418D922584EC1E006454D5 /* SetupPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418D912584EC1E006454D5 /* SetupPlayerView.swift */; };
+		DD418D962584FD38006454D5 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418D952584FD38006454D5 /* TimeInterval.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +171,8 @@
 		2CDA8A8425824D610005613C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		2CDA8A8E25824DB10005613C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2CDA8A9525824E2F0005613C /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
+		DD418D912584EC1E006454D5 /* SetupPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayerView.swift; sourceTree = "<group>"; };
+		DD418D952584FD38006454D5 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				2CDA8A5725824CCF0005613C /* PlayerView.swift */,
+				DD418D912584EC1E006454D5 /* SetupPlayerView.swift */,
 				2CDA8A3725824C5B0005613C /* PlayerController.swift */,
 			);
 			path = Player;
@@ -427,6 +432,7 @@
 				2CD6EDC82582597F00C30F37 /* UIView+Ext.swift */,
 				2CD6EDA32582530B00C30F37 /* URL+URLComponents.swift */,
 				2CD6ED9F258252C800C30F37 /* URLRequest+QueryItems.swift */,
+				DD418D952584FD38006454D5 /* TimeInterval.swift */,
 				2C86D3522584E95E0047A2AC /* Data+Ext.swift */,
 			);
 			path = Extensions;
@@ -563,6 +569,7 @@
 				2C86D3422584E1D30047A2AC /* Copyright.swift in Sources */,
 				2CDA8A5825824CCF0005613C /* PlayerView.swift in Sources */,
 				2CDA8A5C25824CD80005613C /* AlbumController.swift in Sources */,
+				DD418D922584EC1E006454D5 /* SetupPlayerView.swift in Sources */,
 				2CDA8A4425824C790005613C /* SearchController.swift in Sources */,
 				2C86D3532584E95E0047A2AC /* Data+Ext.swift in Sources */,
 				2CD6EDCD2582597F00C30F37 /* UIFont+.swift in Sources */,
@@ -606,6 +613,7 @@
 				2C86D3432584E1D30047A2AC /* Image.swift in Sources */,
 				2CD6EDCF2582597F00C30F37 /* UIView+Constraints.swift in Sources */,
 				2CDA8A8125824D5A0005613C /* TextField.swift in Sources */,
+				DD418D962584FD38006454D5 /* TimeInterval.swift in Sources */,
 				2CD6ED9C25824EA500C30F37 /* Constants.swift in Sources */,
 				2CDA8A20258244BD0005613C /* Album.swift in Sources */,
 				2CDA8A7225824D220005613C /* SettingsView.swift in Sources */,
@@ -698,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -753,7 +761,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -769,7 +777,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DK64384C46;
+				DEVELOPMENT_TEAM = M3F7393QK5;
 				INFOPLIST_FILE = SpotifyClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,7 +796,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DK64384C46;
+				DEVELOPMENT_TEAM = M3F7393QK5;
 				INFOPLIST_FILE = SpotifyClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
