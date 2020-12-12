@@ -20,8 +20,8 @@ class HomeCollectionView: UIView {
             .horizontal(padding: 0),
             .bottom(padding: 0, from: bottomAnchor)
         ])
-        
-        collectionView.backgroundColor = .yellow
+        collectionView.backgroundColor = #colorLiteral(red: 0.09410376102, green: 0.09412736446, blue: 0.09410066158, alpha: 1)
+
     }
     
 }

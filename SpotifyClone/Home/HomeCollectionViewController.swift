@@ -15,6 +15,8 @@ class HomeCollectionViewController: UIViewController {
     private var cellIdentfier = "cell"
     private var albumCellIdentfier = "albumCellIdentfier"
     private var topCellIdentfier = "topCellIdentfier"
+    private var artistCellIdentfier = "artistCellIdentfier"
+
 
     private var headerIdentfier = "header"
     private static var headerKind = "headerKind"
@@ -29,6 +31,8 @@ class HomeCollectionViewController: UIViewController {
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: createLayout())
         collectionView.register(TopCell.self, forCellWithReuseIdentifier: topCellIdentfier)
         collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: albumCellIdentfier)
+        collectionView.register(ArtistCell.self, forCellWithReuseIdentifier: artistCellIdentfier)
+
 
         collectionView.register(Header.self, forSupplementaryViewOfKind: HomeCollectionViewController.headerKind, withReuseIdentifier: headerIdentfier)
 
@@ -47,7 +51,6 @@ class HomeCollectionViewController: UIViewController {
         
         homeCollectionView.setupView()
         self.view = homeCollectionView
-        view.backgroundColor = .blue
     }
     
     func createLayout() -> UICollectionViewLayout {
@@ -55,7 +58,6 @@ class HomeCollectionViewController: UIViewController {
         return UICollectionViewCompositionalLayout { (section, env) -> NSCollectionLayoutSection in
             
             if section == 0 {
-                #warning("Add static cells")
                 
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .absolute(60))
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -128,14 +130,13 @@ extension HomeCollectionViewController: UICollectionViewDataSource {
         if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: topCellIdentfier, for: indexPath) as! TopCell
             cell.image.image = #imageLiteral(resourceName: "Album")
+            cell.backgroundColor = #colorLiteral(red: 0.1607843137, green: 0.1529411765, blue: 0.1843137255, alpha: 1)
             cell.label.text = "Liked Songs"
-            cell.backgroundColor = .blue
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: albumCellIdentfier, for: indexPath) as! AlbumCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: artistCellIdentfier, for: indexPath) as! ArtistCell
             cell.image.image = #imageLiteral(resourceName: "Album")
             cell.label.text = "Liked Songs"
-            cell.backgroundColor = .red
             return cell
         }
     }
@@ -164,6 +165,8 @@ class Header: UICollectionReusableView {
         
         label.text = ""
         label.font = UIFont(name: AppFontName.bold, size: 20)
+        label.textColor = .white
+
 
         
         addSubview(label)
@@ -193,18 +196,52 @@ class AlbumCell: UICollectionViewCell {
     }
     
     func setUpCell() {
-        addSubview(label)
-        addSubview(image)
+        addSubviews(image,label)
         label.setConstraints([
-            .bottom(padding: 5, from: bottomAnchor),
+            .top(padding: 5, from: image.bottomAnchor),
             .horizontal(padding: 2)
         ])
         image.setConstraints([
             .top(padding: 0, from: topAnchor),
             .horizontal(padding: 0),
-            .bottom(padding: 5, from: label.topAnchor)
+            .height(145 - (label.frame.height + 10)),
+            .width(145 - (label.frame.height + 10)),
         ])
         label.font = UIFont(name: AppFontName.bold, size: 12)
+        label.textColor = .white
+    }
+}
+
+class ArtistCell: UICollectionViewCell {
+    let image = UIImageView()
+    let label = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUpCell()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setUpCell() {
+        addSubviews(image,label)
+        label.setConstraints([
+            .top(padding: 5, from: image.bottomAnchor),
+            .horizontal(padding: 2)
+        ])
+        image.setConstraints([
+            .top(padding: 0, from: topAnchor),
+            .horizontal(padding: 0),
+            .height(145 - (label.frame.height + 10)),
+            .width(145 - (label.frame.height + 10)),
+        ])
+        label.font = UIFont(name: AppFontName.bold, size: 12)
+        label.textColor = .white
+        label.textAlignment = .center
+        image.layer.cornerRadius = (145 - (label.frame.height + 10))/2
+        image.layer.masksToBounds = true
     }
 }
 
@@ -222,18 +259,21 @@ class TopCell: UICollectionViewCell {
     }
     
     func setUpCell() {
-        addSubview(label)
-        addSubview(image)
+        self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
+        
+        addSubviews(label,image)
         label.setConstraints([
-            .left(padding: 5, from: image.trailingAnchor),
+            .leading(padding: 10, from: image.trailingAnchor),
             .vertical(padding: 0),
             .trailing(padding: 0, from: trailingAnchor)
         ])
         image.setConstraints([
             .vertical(padding: 0),
             .width(60),
+            .leading(padding: 0, from: leadingAnchor)
         ])
         label.font = UIFont(name: AppFontName.bold, size: 12)
-
+        label.textColor = .white
     }
 }
