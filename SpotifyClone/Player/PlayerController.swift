@@ -166,10 +166,10 @@ class PlayerController: UIViewController , AVPlayerItemOutputPullDelegate{
         switch songSetting.isShuffle {
         case true:
             songSetting.isShuffle = false
-            sender.tintColor = .white
+            sender.tintColor = .green
         case false:
             songSetting.isShuffle = true
-            sender.tintColor = #colorLiteral(red: 0.5588387847, green: 0.5555200577, blue: 0.5613919497, alpha: 1)
+            sender.tintColor = .white
         }
     }
     
@@ -204,17 +204,17 @@ class PlayerController: UIViewController , AVPlayerItemOutputPullDelegate{
         switch songSetting.repeatState {
         case .notRepeat:
             songSetting.repeatState = .repeat
-            sender.tintColor = .white
+            sender.tintColor = .green
             sender.setImage(UIImage(systemName: "repeat"), for: .normal)
             
         case .repeat:
             songSetting.repeatState = .repeat1
-            sender.tintColor = .white
+            sender.tintColor = .green
             sender.setImage(UIImage(systemName: "repeat.1"), for: .normal)
             
         case .repeat1:
             songSetting.repeatState = .notRepeat
-            sender.tintColor = #colorLiteral(red: 0.5588387847, green: 0.5555200577, blue: 0.5613919497, alpha: 1)
+            sender.tintColor = .white
             sender.setImage(UIImage(systemName: "repeat"), for: .normal)
         }
     }

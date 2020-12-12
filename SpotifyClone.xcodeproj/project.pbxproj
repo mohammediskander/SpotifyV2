@@ -67,6 +67,9 @@
 		2CDA8A9625824E2F0005613C /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A9525824E2F0005613C /* AlbumRouter.swift */; };
 		DD418D922584EC1E006454D5 /* SetupPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418D912584EC1E006454D5 /* SetupPlayerView.swift */; };
 		DD418D962584FD38006454D5 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418D952584FD38006454D5 /* TimeInterval.swift */; };
+		DD418DB425855C42006454D5 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418DB125855C41006454D5 /* UIColor++.swift */; };
+		DD418DB525855C42006454D5 /* UIImage++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418DB225855C42006454D5 /* UIImage++.swift */; };
+		DD418DB625855C42006454D5 /* KMeansClusterer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD418DB325855C42006454D5 /* KMeansClusterer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +146,9 @@
 		2CDA8A9525824E2F0005613C /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
 		DD418D912584EC1E006454D5 /* SetupPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayerView.swift; sourceTree = "<group>"; };
 		DD418D952584FD38006454D5 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		DD418DB125855C41006454D5 /* UIColor++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		DD418DB225855C42006454D5 /* UIImage++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage++.swift"; sourceTree = "<group>"; };
+		DD418DB325855C42006454D5 /* KMeansClusterer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMeansClusterer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				2CDA8A7C25824D490005613C /* Text.swift */,
+				DD418DB325855C42006454D5 /* KMeansClusterer.swift */,
 				2CDA8A8025824D5A0005613C /* TextField.swift */,
 				2CDA8A8425824D610005613C /* Button.swift */,
 			);
@@ -373,6 +380,8 @@
 				2CD6EDA32582530B00C30F37 /* URL+URLComponents.swift */,
 				2CD6ED9F258252C800C30F37 /* URLRequest+QueryItems.swift */,
 				DD418D952584FD38006454D5 /* TimeInterval.swift */,
+				DD418DB125855C41006454D5 /* UIColor++.swift */,
+				DD418DB225855C42006454D5 /* UIImage++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -504,10 +513,12 @@
 				2CD6EDA82582568000C30F37 /* AlbumDataSource.swift in Sources */,
 				2CDA8A7825824D320005613C /* UserView.swift in Sources */,
 				2C86D3412584E1D30047A2AC /* Tracks.swift in Sources */,
+				DD418DB425855C42006454D5 /* UIColor++.swift in Sources */,
 				2C86D3422584E1D30047A2AC /* Copyright.swift in Sources */,
 				2CDA8A5825824CCF0005613C /* PlayerView.swift in Sources */,
 				2CDA8A5C25824CD80005613C /* AlbumController.swift in Sources */,
 				DD418D922584EC1E006454D5 /* SetupPlayerView.swift in Sources */,
+				DD418DB625855C42006454D5 /* KMeansClusterer.swift in Sources */,
 				2CDA8A4425824C790005613C /* SearchController.swift in Sources */,
 				2CD6EDCD2582597F00C30F37 /* UIFont+.swift in Sources */,
 				2C075C902584CE5C001FA2C7 /* FetchingOperation.swift in Sources */,
@@ -543,6 +554,7 @@
 				2CDA8A7225824D220005613C /* SettingsView.swift in Sources */,
 				2CDA8A5225824CBC0005613C /* HomeView.swift in Sources */,
 				2CDA8A1C258244BD0005613C /* Artist.swift in Sources */,
+				DD418DB525855C42006454D5 /* UIImage++.swift in Sources */,
 				2CBD8E24258216FA000DCF46 /* SceneDelegate.swift in Sources */,
 				2CD6EDA42582530B00C30F37 /* URL+URLComponents.swift in Sources */,
 				2CDA8A4025824C6D0005613C /* PlaylistController.swift in Sources */,

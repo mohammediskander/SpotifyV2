@@ -44,6 +44,7 @@ class PlayerView: UIView {
     
     func setupSongInfo(songName: String , backgroundImage: UIImage ,  artistName: String , artistNames: String , isLike: Bool , endTime: TimeInterval) {
         
+        self.getColerFromImage(image: backgroundImage)
         self.songName.text = songName
         self.songBackgroundView.image = backgroundImage
         self.artistName.text = artistName

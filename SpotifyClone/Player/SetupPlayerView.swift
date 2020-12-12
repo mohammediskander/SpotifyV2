@@ -185,7 +185,8 @@ extension PlayerView {
         
         // shuffle music button
         shuffleMusicButton.setImage(UIImage(systemName: "shuffle"), for: .normal)
-        shuffleMusicButton.tintColor = #colorLiteral(red: 0.5588387847, green: 0.5555200577, blue: 0.5613919497, alpha: 1)
+        shuffleMusicButton.tintColor = .white
+        shuffleMusicButton.setShadow(coler: .black, opacity: 0.7, offset: .zero, radius: 8)
         
         playerStackView.addArrangedSubview(shuffleMusicButton)
         
@@ -217,7 +218,7 @@ extension PlayerView {
         
         // repeat music button
         repeatMusicButton.setImage(UIImage(systemName: "repeat"), for: .normal)
-        repeatMusicButton.tintColor = #colorLiteral(red: 0.5588387847, green: 0.5555200577, blue: 0.5613919497, alpha: 1)
+        repeatMusicButton.tintColor = .white
 
         playerStackView.addArrangedSubview(repeatMusicButton)
     }
