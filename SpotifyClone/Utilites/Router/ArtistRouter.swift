@@ -98,7 +98,8 @@ enum ArtistRouter: Router {
         
         if accessType == .some(.privateRoute) {
             
-            let token = KeyChain.load(key: "spotify.user.oauthToken")?.to(type: String.self)            urlRequest.allHTTPHeaderFields?["Authorization"] = token
+            let token = KeyChain.load(key: "spotify.user.oauthToken")?.to(type: String.self);
+            urlRequest.allHTTPHeaderFields?["Authorization"] = token
         }
         
         if let parameters = parameters {

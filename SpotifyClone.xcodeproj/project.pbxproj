@@ -36,6 +36,7 @@
 		2C86D379258537F50047A2AC /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86D378258537F50047A2AC /* SearchRouter.swift */; };
 		2C86D37D2585399C0047A2AC /* TracksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86D37C2585399C0047A2AC /* TracksRouter.swift */; };
 		2C86D38325853B110047A2AC /* UsersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86D38225853B110047A2AC /* UsersProfile.swift */; };
+		2C86D38825853F4F0047A2AC /* ArtistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86D38725853F4F0047A2AC /* ArtistDataSource.swift */; };
 		2CBD8E22258216FA000DCF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD8E21258216FA000DCF46 /* AppDelegate.swift */; };
 		2CBD8E24258216FA000DCF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD8E23258216FA000DCF46 /* SceneDelegate.swift */; };
 		2CBD8E2B258216FC000DCF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD8E2A258216FC000DCF46 /* Assets.xcassets */; };
@@ -121,6 +122,7 @@
 		2C86D378258537F50047A2AC /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
 		2C86D37C2585399C0047A2AC /* TracksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksRouter.swift; sourceTree = "<group>"; };
 		2C86D38225853B110047A2AC /* UsersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProfile.swift; sourceTree = "<group>"; };
+		2C86D38725853F4F0047A2AC /* ArtistDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDataSource.swift; sourceTree = "<group>"; };
 		2CBD8E1E258216FA000DCF46 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBD8E21258216FA000DCF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBD8E23258216FA000DCF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		1E556B0925828EF4007AFCB4 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
+				2C86D38625853F360047A2AC /* DataSource */,
 				2CDA8A12258244BD0005613C /* Artist.swift */,
 			);
 			path = Artist;
@@ -289,6 +292,14 @@
 				2C86D38225853B110047A2AC /* UsersProfile.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2C86D38625853F360047A2AC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2C86D38725853F4F0047A2AC /* ArtistDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		2CBD8E15258216FA000DCF46 = {
@@ -588,6 +599,7 @@
 				2C075C942584CEAC001FA2C7 /* Fetcher.swift in Sources */,
 				2C075C9C2584D022001FA2C7 /* JSONNull.swift in Sources */,
 				2CDA8A7D25824D490005613C /* Text.swift in Sources */,
+				2C86D38825853F4F0047A2AC /* ArtistDataSource.swift in Sources */,
 				2C86D3492584E3750047A2AC /* ArtistRouter.swift in Sources */,
 				2CBD8E22258216FA000DCF46 /* AppDelegate.swift in Sources */,
 				2CDA8A6025824CE80005613C /* AuthView.swift in Sources */,
