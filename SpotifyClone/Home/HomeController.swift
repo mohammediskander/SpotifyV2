@@ -20,9 +20,9 @@ class HomeController: UIViewController {
         let homeView = HomeView(frame: self.view.bounds)
         self.view.addSubview(homeView)
         homeView.backgroundColor = .red
-        let firstCollectionViewController = AlbumArtistCollectionViewController()
+        let firstCollectionViewController = HomeCollectionViewController()
         self.addChild(firstCollectionViewController)
-        homeView.firstCollectionView = firstCollectionViewController.view
+        homeView.collectionView = firstCollectionViewController.view
         homeView.setupView()
     }
     
