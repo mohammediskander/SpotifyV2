@@ -10,7 +10,7 @@ import UIKit
 class HomeView: UIView {
     #warning("change to text class")
     var headerTitle: UITextField!
-    var firstCollectionView: UIView!
+    var collectionView: UIView!
     
     
     
@@ -20,17 +20,17 @@ class HomeView: UIView {
         headerTitle.text = "Good Evening, Abdullah"
         headerTitle.font = UIFont(name: AppFontName.bold, size: 20)
 //        self.headerTitle = UITextField("Hello, Mohammed", size: 20, font: AppFontName.bold)
-        self.addSubviews(headerTitle,firstCollectionView)
+        self.addSubviews(headerTitle,collectionView)
         
         headerTitle.setConstraints([
             .top(padding: 0, from: nil),
             .horizontal(padding: 15)
         ])
         
-        firstCollectionView.setConstraints([
+        collectionView.setConstraints([
             .top(padding: 5, from: headerTitle.bottomAnchor),
             .horizontal(padding: 0),
-            .height(150)
+            .bottom(padding: 0, from: bottomAnchor)
         ])
     
         

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E556AFE2582825C007AFCB4 /* AlbumArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E556AFD2582825C007AFCB4 /* AlbumArtistView.swift */; };
-		1E6AEFB82582809000A11B36 /* AlbumArtistCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6AEFB72582809000A11B36 /* AlbumArtistCollectionViewController.swift */; };
+		1E556AFE2582825C007AFCB4 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E556AFD2582825C007AFCB4 /* HomeCollectionView.swift */; };
+		1E6AEFB82582809000A11B36 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6AEFB72582809000A11B36 /* HomeCollectionViewController.swift */; };
 		2C075C8C2584CE1A001FA2C7 /* FetchingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075C8B2584CE1A001FA2C7 /* FetchingRequest.swift */; };
 		2C075C902584CE5C001FA2C7 /* FetchingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075C8F2584CE5C001FA2C7 /* FetchingOperation.swift */; };
 		2C075C942584CEAC001FA2C7 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075C932584CEAC001FA2C7 /* Fetcher.swift */; };
@@ -93,8 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E556AFD2582825C007AFCB4 /* AlbumArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistView.swift; sourceTree = "<group>"; };
-		1E6AEFB72582809000A11B36 /* AlbumArtistCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtistCollectionViewController.swift; sourceTree = "<group>"; };
+		1E556AFD2582825C007AFCB4 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
+		1E6AEFB72582809000A11B36 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		2C075C8B2584CE1A001FA2C7 /* FetchingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingRequest.swift; sourceTree = "<group>"; };
 		2C075C8F2584CE5C001FA2C7 /* FetchingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingOperation.swift; sourceTree = "<group>"; };
 		2C075C932584CEAC001FA2C7 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
@@ -213,10 +213,10 @@
 		1E556B0B25828F40007AFCB4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1E556AFD2582825C007AFCB4 /* AlbumArtistView.swift */,
 				2CDA8A5125824CBC0005613C /* HomeView.swift */,
 				2CDA8A2D25824C2D0005613C /* HomeController.swift */,
-				1E6AEFB72582809000A11B36 /* AlbumArtistCollectionViewController.swift */,
+				1E556AFD2582825C007AFCB4 /* HomeCollectionView.swift */,
+				1E6AEFB72582809000A11B36 /* HomeCollectionViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -568,14 +568,14 @@
 				2CD6EDCD2582597F00C30F37 /* UIFont+.swift in Sources */,
 				2C86D375258518BE0047A2AC /* PlaylistsRouter.swift in Sources */,
 				2C075C902584CE5C001FA2C7 /* FetchingOperation.swift in Sources */,
-				1E6AEFB82582809000A11B36 /* AlbumArtistCollectionViewController.swift in Sources */,
+				1E6AEFB82582809000A11B36 /* HomeCollectionViewController.swift in Sources */,
 				2CDA8A6A25824D0D0005613C /* AlbumView.swift in Sources */,
 				2CD6EDA0258252C800C30F37 /* URLRequest+QueryItems.swift in Sources */,
 				2C075C982584CFF4001FA2C7 /* JSON.swift in Sources */,
 				2CD6EDCC2582597F00C30F37 /* UIView+Ext.swift in Sources */,
 				2C86D38325853B110047A2AC /* UsersProfile.swift in Sources */,
 				2CDA8A6E25824D150005613C /* SearchView.swift in Sources */,
-				1E556AFE2582825C007AFCB4 /* AlbumArtistView.swift in Sources */,
+				1E556AFE2582825C007AFCB4 /* HomeCollectionView.swift in Sources */,
 				2CDA8A8F25824DB10005613C /* Router.swift in Sources */,
 				2C86D37D2585399C0047A2AC /* TracksRouter.swift in Sources */,
 				2CDA8A9625824E2F0005613C /* AlbumRouter.swift in Sources */,
