@@ -16,6 +16,12 @@
 		2C075C9C2584D022001FA2C7 /* JSONNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075C9B2584D022001FA2C7 /* JSONNull.swift */; };
 		2C075CA02584D06E001FA2C7 /* JSONAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075C9F2584D06E001FA2C7 /* JSONAny.swift */; };
 		2C075CA42584D097001FA2C7 /* JSONCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CA32584D097001FA2C7 /* JSONCodingKey.swift */; };
+		2C075CB32584DDAC001FA2C7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CAD2584DDAC001FA2C7 /* Image.swift */; };
+		2C075CB42584DDAC001FA2C7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CAE2584DDAC001FA2C7 /* Item.swift */; };
+		2C075CB52584DDAC001FA2C7 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CAF2584DDAC001FA2C7 /* Tracks.swift */; };
+		2C075CB62584DDAC001FA2C7 /* ExternalIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CB02584DDAC001FA2C7 /* ExternalIDS.swift */; };
+		2C075CB72584DDAC001FA2C7 /* ExternalUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CB12584DDAC001FA2C7 /* ExternalUrls.swift */; };
+		2C075CB82584DDAC001FA2C7 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C075CB22584DDAC001FA2C7 /* Copyright.swift */; };
 		2CBD8E22258216FA000DCF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD8E21258216FA000DCF46 /* AppDelegate.swift */; };
 		2CBD8E24258216FA000DCF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD8E23258216FA000DCF46 /* SceneDelegate.swift */; };
 		2CBD8E2B258216FC000DCF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD8E2A258216FC000DCF46 /* Assets.xcassets */; };
@@ -36,16 +42,8 @@
 		2CD6EDCD2582597F00C30F37 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EDC92582597F00C30F37 /* UIFont+.swift */; };
 		2CD6EDCE2582597F00C30F37 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EDCA2582597F00C30F37 /* Date+Ext.swift */; };
 		2CD6EDCF2582597F00C30F37 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EDCB2582597F00C30F37 /* UIView+Constraints.swift */; };
-		2CDA8A1B258244BD0005613C /* ExternalUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A11258244BD0005613C /* ExternalUrls.swift */; };
 		2CDA8A1C258244BD0005613C /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A12258244BD0005613C /* Artist.swift */; };
-		2CDA8A1D258244BD0005613C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A13258244BD0005613C /* Image.swift */; };
-		2CDA8A1E258244BD0005613C /* SpotifyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A14258244BD0005613C /* SpotifyResponse.swift */; };
-		2CDA8A1F258244BD0005613C /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A15258244BD0005613C /* JSONSchemaSupport.swift */; };
 		2CDA8A20258244BD0005613C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A16258244BD0005613C /* Album.swift */; };
-		2CDA8A21258244BD0005613C /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A17258244BD0005613C /* Tracks.swift */; };
-		2CDA8A22258244BD0005613C /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A18258244BD0005613C /* Copyright.swift */; };
-		2CDA8A23258244BD0005613C /* ExternalIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A19258244BD0005613C /* ExternalIDS.swift */; };
-		2CDA8A24258244BD0005613C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A1A258244BD0005613C /* Item.swift */; };
 		2CDA8A2E25824C2D0005613C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A2D25824C2D0005613C /* HomeController.swift */; };
 		2CDA8A3225824C370005613C /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A3125824C370005613C /* AuthController.swift */; };
 		2CDA8A3825824C5B0005613C /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDA8A3725824C5B0005613C /* PlayerController.swift */; };
@@ -89,6 +87,12 @@
 		2C075C9B2584D022001FA2C7 /* JSONNull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONNull.swift; sourceTree = "<group>"; };
 		2C075C9F2584D06E001FA2C7 /* JSONAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAny.swift; sourceTree = "<group>"; };
 		2C075CA32584D097001FA2C7 /* JSONCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodingKey.swift; sourceTree = "<group>"; };
+		2C075CAD2584DDAC001FA2C7 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/Image.swift"; sourceTree = "<group>"; };
+		2C075CAE2584DDAC001FA2C7 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/Item.swift"; sourceTree = "<group>"; };
+		2C075CAF2584DDAC001FA2C7 /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tracks.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/Tracks.swift"; sourceTree = "<group>"; };
+		2C075CB02584DDAC001FA2C7 /* ExternalIDS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalIDS.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/ExternalIDS.swift"; sourceTree = "<group>"; };
+		2C075CB12584DDAC001FA2C7 /* ExternalUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalUrls.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/ExternalUrls.swift"; sourceTree = "<group>"; };
+		2C075CB22584DDAC001FA2C7 /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Copyright.swift; path = "../../../../Desktop/SpotifyResponse Swift (quicktype) 2/Copyright.swift"; sourceTree = "<group>"; };
 		2CBD8E1E258216FA000DCF46 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBD8E21258216FA000DCF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBD8E23258216FA000DCF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,16 +116,8 @@
 		2CD6EDC92582597F00C30F37 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		2CD6EDCA2582597F00C30F37 /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		2CD6EDCB2582597F00C30F37 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		2CDA8A11258244BD0005613C /* ExternalUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalUrls.swift; path = ../ExternalUrls.swift; sourceTree = "<group>"; };
 		2CDA8A12258244BD0005613C /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
-		2CDA8A13258244BD0005613C /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = ../Image.swift; sourceTree = "<group>"; };
-		2CDA8A14258244BD0005613C /* SpotifyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotifyResponse.swift; path = ../SpotifyResponse.swift; sourceTree = "<group>"; };
-		2CDA8A15258244BD0005613C /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONSchemaSupport.swift; path = ../JSONSchemaSupport.swift; sourceTree = "<group>"; };
 		2CDA8A16258244BD0005613C /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		2CDA8A17258244BD0005613C /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tracks.swift; path = ../Tracks.swift; sourceTree = "<group>"; };
-		2CDA8A18258244BD0005613C /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Copyright.swift; path = ../Copyright.swift; sourceTree = "<group>"; };
-		2CDA8A19258244BD0005613C /* ExternalIDS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalIDS.swift; path = ../ExternalIDS.swift; sourceTree = "<group>"; };
-		2CDA8A1A258244BD0005613C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 		2CDA8A2D25824C2D0005613C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2CDA8A3125824C370005613C /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		2CDA8A3725824C5B0005613C /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
@@ -326,14 +322,12 @@
 		2CDA89B8258240610005613C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2CDA8A18258244BD0005613C /* Copyright.swift */,
-				2CDA8A19258244BD0005613C /* ExternalIDS.swift */,
-				2CDA8A11258244BD0005613C /* ExternalUrls.swift */,
-				2CDA8A13258244BD0005613C /* Image.swift */,
-				2CDA8A1A258244BD0005613C /* Item.swift */,
-				2CDA8A15258244BD0005613C /* JSONSchemaSupport.swift */,
-				2CDA8A14258244BD0005613C /* SpotifyResponse.swift */,
-				2CDA8A17258244BD0005613C /* Tracks.swift */,
+				2C075CB22584DDAC001FA2C7 /* Copyright.swift */,
+				2C075CB02584DDAC001FA2C7 /* ExternalIDS.swift */,
+				2C075CB12584DDAC001FA2C7 /* ExternalUrls.swift */,
+				2C075CAD2584DDAC001FA2C7 /* Image.swift */,
+				2C075CAE2584DDAC001FA2C7 /* Item.swift */,
+				2C075CAF2584DDAC001FA2C7 /* Tracks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -496,13 +490,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CDA8A21258244BD0005613C /* Tracks.swift in Sources */,
 				2CDA8A4A25824CA60005613C /* UserController.swift in Sources */,
 				2CDA8A8525824D610005613C /* Button.swift in Sources */,
 				2CD6EDCE2582597F00C30F37 /* Date+Ext.swift in Sources */,
 				2CD6EDA82582568000C30F37 /* AlbumDataSource.swift in Sources */,
 				2CDA8A7825824D320005613C /* UserView.swift in Sources */,
 				2CDA8A5825824CCF0005613C /* PlayerView.swift in Sources */,
+				2C075CB52584DDAC001FA2C7 /* Tracks.swift in Sources */,
 				2CDA8A5C25824CD80005613C /* AlbumController.swift in Sources */,
 				2CDA8A4425824C790005613C /* SearchController.swift in Sources */,
 				2CD6EDCD2582597F00C30F37 /* UIFont+.swift in Sources */,
@@ -515,36 +509,34 @@
 				2CDA8A6E25824D150005613C /* SearchView.swift in Sources */,
 				1E556AFE2582825C007AFCB4 /* AlbumArtistView.swift in Sources */,
 				2CDA8A8F25824DB10005613C /* Router.swift in Sources */,
+				2C075CB82584DDAC001FA2C7 /* Copyright.swift in Sources */,
 				2CDA8A9625824E2F0005613C /* AlbumRouter.swift in Sources */,
 				2CDA8A3825824C5B0005613C /* PlayerController.swift in Sources */,
 				2C075CA42584D097001FA2C7 /* JSONCodingKey.swift in Sources */,
 				2C075C8C2584CE1A001FA2C7 /* FetchingRequest.swift in Sources */,
+				2C075CB32584DDAC001FA2C7 /* Image.swift in Sources */,
 				2CDA8A3C25824C640005613C /* SettingsController.swift in Sources */,
 				2CDA8A2E25824C2D0005613C /* HomeController.swift in Sources */,
 				2CDA8A6625824CFF0005613C /* PlaylistView.swift in Sources */,
-				2CDA8A1D258244BD0005613C /* Image.swift in Sources */,
 				2CDA8A3225824C370005613C /* AuthController.swift in Sources */,
 				2C075CA02584D06E001FA2C7 /* JSONAny.swift in Sources */,
+				2C075CB42584DDAC001FA2C7 /* Item.swift in Sources */,
 				2C075C942584CEAC001FA2C7 /* Fetcher.swift in Sources */,
-				2CDA8A1F258244BD0005613C /* JSONSchemaSupport.swift in Sources */,
 				2C075C9C2584D022001FA2C7 /* JSONNull.swift in Sources */,
 				2CDA8A7D25824D490005613C /* Text.swift in Sources */,
 				2CBD8E22258216FA000DCF46 /* AppDelegate.swift in Sources */,
-				2CDA8A22258244BD0005613C /* Copyright.swift in Sources */,
+				2C075CB72584DDAC001FA2C7 /* ExternalUrls.swift in Sources */,
 				2CDA8A6025824CE80005613C /* AuthView.swift in Sources */,
-				2CDA8A1B258244BD0005613C /* ExternalUrls.swift in Sources */,
+				2C075CB62584DDAC001FA2C7 /* ExternalIDS.swift in Sources */,
 				2CD6EDCF2582597F00C30F37 /* UIView+Constraints.swift in Sources */,
 				2CDA8A8125824D5A0005613C /* TextField.swift in Sources */,
 				2CD6ED9C25824EA500C30F37 /* Constants.swift in Sources */,
-				2CDA8A24258244BD0005613C /* Item.swift in Sources */,
 				2CDA8A20258244BD0005613C /* Album.swift in Sources */,
 				2CDA8A7225824D220005613C /* SettingsView.swift in Sources */,
 				2CDA8A5225824CBC0005613C /* HomeView.swift in Sources */,
 				2CDA8A1C258244BD0005613C /* Artist.swift in Sources */,
 				2CBD8E24258216FA000DCF46 /* SceneDelegate.swift in Sources */,
 				2CD6EDA42582530B00C30F37 /* URL+URLComponents.swift in Sources */,
-				2CDA8A1E258244BD0005613C /* SpotifyResponse.swift in Sources */,
-				2CDA8A23258244BD0005613C /* ExternalIDS.swift in Sources */,
 				2CDA8A4025824C6D0005613C /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
